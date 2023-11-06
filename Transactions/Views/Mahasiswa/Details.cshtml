@@ -1,0 +1,56 @@
+﻿@model Transactions.Models.MahasiswaModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MahasiswaModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nrp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nrp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jurusan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jurusan)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nama_dosen)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nama_dosen)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
